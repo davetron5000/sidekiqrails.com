@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <link href="Copyright (c) 2019–2023 David Bryant Copeland, All Rights Reserved" rel="copyright">
+    <title>Ruby on Rails Background Jobs with Sidekiq</title>
+    <meta content="Website for the book Ruby on Rails Background Jobs with Sidekiq" name="description">
+    <meta content="David Bryant Copeland" name="author">
+
+    <meta content="Ruby on Rails Background Jobs with Sidekiq" name="og:title">
+    <meta content="Ruby on Rails Background Jobs with Sidekiq" property="og:title">
+
+    <meta content="https://sidekiqrails.com" name="og:url">
+    <meta content="https://sidekiqrails.com" property="og:url">
+
+    <meta property="og:image" content="/cover.jpg">
+
+    <meta content="website" property="og:type">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ac879c">
+    <meta name="msapplication-TileColor" content="#ac879c">
+    <meta name="theme-color" content="#74375a">
+
+    <link href="tachyons.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body class="bg-book-purple-lightest book-purple-darkest">
+    <header class="pa3 clearfix">
+      <a class="db dn-ns" href="https://pragprog.com/titles/dcsidekiq/ruby-on-rails-background-jobs-with-sidekiq/" title="Buy Now">
+        <img alt="Book cover inside an e-reader" class="tc db w-70 center" src="images/cover-ereader.png">
+      </a>
+      <div class="flex items-center">
+        <a class="tl dn db-ns w-30" href="https://pragprog.com/titles/dcsidekiq/ruby-on-rails-background-jobs-with-sidekiq/" title="Buy Now">
+          <img alt="Book cover inside an e-reader" src="images/cover-ereader.png">
+        </a>
+        <div class="w-60-ns">
+          <h1 class="f3 f2-ns b tc tl-ns tracked-tight center lh-title">Ruby on Rails Background Jobs with Sidekiq</h1>
+          <h2 class="f4 f3-ns fw5 tc tl-ns lh-title center">Run Code Later without Complicating Your App</h2>
+          <h3 class="f5 f4-ns normal tl-ns tc center lh-title">an EBook by <span class="dib">David Bryant Copeland</span></h3>
+          <nav class="center">
+            <a class="db dib-ns tc book-purple-lightest ba br3 ph4 pv3 bg-book-purple link f4 b" href="https://pragprog.com/titles/dcsidekiq/ruby-on-rails-background-jobs-with-sidekiq/" title="Buy Now">
+              Buy Now, $9.99
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="w-100">
+      <section class="ph3 pv1 bg-book-blue-lightest book-blue-dark">
+        <div class="w-60-ns center">
+          <ul class="pa0 list">
+            <li class="mv2 pb2 lh-copy">
+              <span class="i db pr4">
+                <span role="img" aria-label="thinking">🤔</span>
+                Are users waiting on services like payment processing?
+              </span>
+              <span class="b db mt2 pl4 tr">
+                <span role="img" aria-label="person raising hand">🙋‍♂️</span>
+                Learn to put code in a background job to better manager your infrastructure.
+              </span>
+            </li>
+            <li class="mv2 pb2 lh-copy">
+              <span class="i db pr4">
+                <span role="img" aria-label="tired">😩</span>
+                Getting alerted about failing jobs, but don't know what to do?
+              </span>
+              <span class="b db mt2 pl4 tr">
+                <span role="img" aria-label="person raising hand">🙋</span>
+                Configure Sidekiq and your jobs to notify you only when you need to know.
+              </span>
+            </li>
+            <li class="mv2 pb2 lh-copy">
+              <span class="i db pr4">
+                <span role="img" aria-label="money flying">💸</span>
+                Are you double-charging your customers when there's a network outage?
+              </span>
+              <span class="b db mt2 pl4 tr">
+                <span role="img" aria-label="person raising hand">🙋‍♀️</span>
+                Re-design your code so that jobs pick up where they left off and can be retried safely…without bothering you.
+              </span>
+            </li>
+            <li class="mv2 pb2 lh-copy">
+              <span class="i db pr4">
+                <span role="img" aria-label="face confused">😵‍💫</span>
+                Redis, worker processes, failing jobs…not sure how to monitor all this?
+              </span>
+              <span class="b db mt2 pl4 tr">
+                <span role="img" aria-label="person raising hand">🙋</span>
+                Learn which metrics about your Sidekiq installation are critical and which aren't.
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="ph3 pv2">
+        <div class="w-60-ns center">
+          <p class="measure center lh-copy">
+            Using a background job system like Sidekiq requires more than just throwing code into a <code>perform</code> method.  It means you have a <strong>distributed system</strong>…and all the complexity that goes with it.
+          </p>
+          <p class="measure center lh-copy">
+            This book is 70 pages packed with pratical, actionable advice, based on my experience managing large background job systems.  You'll jump right in getting Sidekiq set up, then putting code into an example app that exhibits all the failures you'll find in the real world.
+          </p>
+        </div>
+      </section>
+      <section class="ph3 pv2 bg-book-blue-darkest book-blue-lightest">
+        <div class="w-60-ns center">
+          <ol class="f4 fw7">
+            <li class="lh-copy center measure mb3">
+              Create a foundational Sidekiq configuration suitable for
+              <span class="dib">production. <span role="img" aria-label="classical building">🏛️</span></span>
+            </li>
+            <li class="lh-copy center measure mb3">
+              See jobs fail, and learn how to keep them from notifying you…but without just forgetting about
+              <span class="dib">them. <span role="img" aria-label="police car's light">🚨</span></span>
+            </li>
+            <li class="lh-copy center measure mb3">
+              Watch jobs get retried and wreak havoc inside your app, then fix it by applying a step-by-step process to understand <em>idempotency</em>—the degree to which your code will only have its effects felt
+              <span class="dib">once. <span role="img" aria-label="counterclockwise arrows">🔄</span></span>
+            </li>
+            <li class="lh-copy center measure mb3">
+              Learn how to organize job code, monitoring the right things, and set yourself up for sustainable operations of your Sidekiq <span class="dib">install.
+                <span role="img" aria-label="bar chart">📊</span></span>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="pa3 book-blue-lightest bg-book-blue-dark clearfix">
+        <div class="w-60-ns center">
+          <h4 class="f3 lh-title ma0">About the Author</h4>
+          <p class="measure center lh-copy">
+            <img src="images/DavidCopeland.png" class="fl w-40 mt2 mr3 mb3 br2">
+            David Bryant Copeland (“Dave” in real life and <a class="link underline book-purple-light" href="https://ruby.social/@davetron5000"><code>@davetron5000</code></a> on social media) is a seasoned technical leader with deep experience designing and maintaining distributed systems for Stitch Fix, LivingSocial, OPower, and Mood Health.  He’s been a CTO, a Chief Software Architect, a Coder, and Manager.
+          </p>
+          <p class="measure center lh-copy">
+            He’s the author of <a class="link underline book-purple-light"  href="https://sustainable-rails.com">“Sustainable Web Development with Ruby on Rails”</a>, <a class="link underline book-purple-light"  href="https://pragprog.com/book/rails6">“Agile Web Development with Rails 6”</a>, <a class="link underline book-purple-light"  href="http://www.theseniorsoftwareengineer.com">“The Senior Software Engineer”</a>, <a class="link underline book-purple-light"  href="https://solid-is-not-solid">S.O.L.I.D is not Solid</a>, and <a class="link underline book-purple-light"  href="http://pragprog.com/book/dccar2">“Build Awesome Command-Line Applications in Ruby 2”</a>.
+          </p>
+        </div>
+      </section>
+      <section class="pa3 book-purple-lightest bg-book-purple-dark">
+        <div class="w-60-ns center">
+          <h4 class="f3 lh-title ma0">Resources</h4>
+          <ul class="list pa0">
+            <li class="measure lh-copy mb3 center">
+              <a class="link underline book-blue-light" href="https://devtalk.com/books/ruby-on-rails-background-jobs-with-sidekiq">Book Forum and Errata</a> - discuss the book, ask questions, or report errors. I monitor this closely.
+            </li>
+            <li class="measure lh-copy mb3 center">
+              <a class="link underline book-blue-light" href="https://github.com/sidekiq/sidekiq/wiki">Sidekiq Wiki</a> - a wealth of reference information.
+            </li>
+            <li class="measure lh-copy mb3 center">
+              <a class="link underline book-blue-light" href="https://github.com/davetron5000/fake-api-server">Fake API Server</a> - used by the book to simulate common failures seen in production.
+            </li>
+            <li class="measure lh-copy mb3 center">
+              <a class="link underline book-blue-light" href="https://github.com/davetron5000/sidekiq-book">Example App and Dev Environment</a> - the app used by the book, including a Docker-based development environment.
+            </li>
+          </ul>
+          <h4 class="f3 lh-title ma0">Related Articles</h4>
+          <ul class="list pa0">
+            <li class="measure lh-copy mb3 center">
+              <a class="link underline book-blue-light" href="https://multithreaded.stitchfix.com/blog/2017/05/31/patterns-of-soa-background-job/">Patterns of Service-oriented Architecture: Background Jobs</a> - a conceptual overview of background jobs</a>
+            </li>
+            <li class="measure lh-copy mb3 center">
+              <a class="link underline book-blue-light" href="https://multithreaded.stitchfix.com/blog/2017/05/09/patterns-of-soa-asynchronous-transaction/">Patterns of Service-oriented Architecture: Asynchronouse Transcation</a> - a very common pattern that uses background jobs to allow long-running code to run uninterrupted</a>
+            </li>
+            <li class="measure lh-copy mb3 center">
+              <a class="link underline book-blue-light" href="https://multithreaded.stitchfix.com/blog/2017/06/26/patterns-of-soa-idempotency-key/">Patterns of Service-oriented Architecture: Idempotency Keys</a> - a pattern used to help make your jobs safely retriable</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="pa3 bg-near-white near-black dark-near-white dark-bg-near-black">
+        <div class="w-60-ns center">
+          <h5 class="f5 ttu tracked">Colophon</h5>
+          <p class="f6 measure lh-copy center">
+            This website was built by hand in HTML and uses both <a href="https://tachyons.io" class="link underline book-blue-dark">Tachyons</a> and custom CSS for styling.  Text is set in Superclarendon, with fallbacks to Bookman Old Style, URW Bookman, Georgia Pro, Georgia, or the system's serif font.  This font stack was provided by <a href="https://modernfontstacks.com" class="link underline book-blue-dark">Modern Font Stacks</a>. Code is set in Courier, with a fallback to the system monospace font. This website is hosted on AWS using S3 and Cloudfront.
+          </p>
+          <p class="f6 measure lh-copy center">
+            This website should respect your color scheme preferences and adjust to dark or light mode appropriately.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="measure tc center f6 fw3">
+        All Content Copyright &copy; 2023, David Bryant Copeland, All Rights Reserved.
+      </p>
+    </footer>
+  </body>
+</html>

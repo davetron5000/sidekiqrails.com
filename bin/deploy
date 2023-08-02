@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+aws s3 sync site s3://sidekiqrails.com --profile=thirdtankdave
+
+cd site
+for file in *; do
+  aws cloudfront create-invalidation --distribution-id=E3VY9EH2ABJB8R --paths=/"$file" --profile=thirdtankdave
+done
+cd ..
