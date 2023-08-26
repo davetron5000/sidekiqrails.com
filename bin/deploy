@@ -5,4 +5,3 @@ set -e
 aws s3 sync site s3://sidekiqrails.com --profile=thirdtankdave
 
 aws cloudfront create-invalidation --distribution-id=E3VY9EH2ABJB8R --paths="/*" --profile=thirdtankdave
-aws cloudfront create-invalidation --distribution-id=E3VY9EH2ABJB8R --paths="/images/*" --profile=thirdtankdave
