@@ -2,14 +2,20 @@
   --mg-ff-sans: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
   --mg-ff-mono: 'Courier New', monospace;
   --mg-purple-lightest: #f1ebef;
-  --mg-purple-light: #ac879c;
+  --mg-purple-lighter: #ac879c;
+  --mg-purple-light: #8b768b;
   --mg-purple: #74375a;	
   --mg-purple-dark: #51273f;
-  --mg-purple-darkest: #2e1624;
+  --mg-purple-darker: #2e1624;
+  --mg-purple-darkest: #23101B;
   --mg-blue-lightest: #e8ecf1;
+  --mg-blue-lighter: #C6D0DC;
   --mg-blue-light: #BDC9D6;
   --mg-blue: #1a4471;	
   --mg-blue-dark: #15365a;
   --mg-blue-darkest: #0d2239;
 }
+
+
+
 
