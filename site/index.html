@@ -68,7 +68,7 @@
             <li class="mv2 pb2 lh-copy">
               <p class="i db pr-4 measure-narrow mh-auto mb-0">
                 <span role="img" aria-label="tired">😩</span>
-                Getting alerted about failing jobs, but don't know what to do?
+                Getting alerted about failing jobs, but don't know <span class="dib">what to do?</span>
               </p>
               <p class="fw-bold db mt-1 pl-4 tr measure-narrow mh-auto">
                 <span role="img" aria-label="person raising hand">🙋</span>
@@ -82,7 +82,7 @@
               </p>
               <p class="fw-bold db mt-1 pl-4 tr measure-narrow mh-auto">
                 <span role="img" aria-label="person raising hand">🙋‍♀️</span>
-                Re-design your code so that jobs pick up where they left off and can be retried safely…without <span class="dib">bothering you.</span>
+                Re-design your code so that jobs can be safely retried by picking up where they left off…without <span class="dib">bothering you.</span>
               </p>
             </li>
             <li class="mv-2 pb-2 lh-copy">
@@ -92,7 +92,7 @@
               </p>
               <p class="fw-bold db mt-1 measure-narrow pl-4 tr mh-auto">
                 <span role="img" aria-label="person raising hand">🙋</span>
-                Learn which metrics about your Sidekiq installation are critical and <span class="dib">which aren't.</span>
+                Learn which metrics are critical—and which aren't—about your Sidekiq installation.
               </p>
             </li>
           </ul>
@@ -104,7 +104,7 @@
             Using a background job system like Sidekiq requires more than just throwing code into a <code class="ff-mono fw-bold">perform</code> method.  It means you have a <strong>distributed system</strong>…and all the complexity that goes with it.
           </p>
           <p class="p mh-auto">
-            This book is 70 pages packed with pratical, actionable advice, based on my experience managing large background job systems.  You'll jump right in getting Sidekiq set up, then putting code into an example app that exhibits all the failures you'll find in the real world.
+            This book has 70 pages packed with pratical, actionable advice, based on my experience managing large background job systems.  You'll jump right into getting Sidekiq set up, then putting code into an example app that exhibits all the failures you'll find in the real world.
           </p>
         </div>
       </section>
@@ -116,16 +116,15 @@
               <span class="dib">production. <span role="img" aria-label="classical building">🏛️</span></span>
             </li>
             <li class="lh-copy mh-auto measure-narrow mb-3">
-              See jobs fail, and learn how to keep them from notifying you…but without just forgetting about
+              See jobs fail, then learn how to keep them from notifying you…but without just forgetting about
               <span class="dib">them. <span role="img" aria-label="police car's light">🚨</span></span>
             </li>
             <li class="lh-copy mh-auto measure-narrow mb-3">
-              Watch jobs get retried and wreak havoc inside your app, then fix it by applying a step-by-step process to understand <em>idempotency</em>—the degree to which your code will only have its effects felt
+              Watch jobs get retried and wreak havoc inside your app, then fix them by applying a step-by-step process to understand <em>idempotency</em>—the degree to which your code will only have its effects felt
               <span class="dib">once. <span role="img" aria-label="counterclockwise arrows">🔄</span></span>
             </li>
             <li class="lh-copy mh-auto measure-narrow mb-3">
-              Learn how to organize job code, monitoring the right things, and set yourself up for sustainable operations of your Sidekiq <span class="dib">install.
-                <span role="img" aria-label="bar chart">📊</span></span>
+              Learn how to organize job code, monitor the right things, and set yourself up to sustainably operate <span class="dib">Sidekiq. <span role="img" aria-label="bar chart">📊</span></span>
             </li>
           </ol>
         </div>
@@ -135,7 +134,7 @@
           <h4 class="f-4 lh-title ma0">About the Author</h4>
           <p class="p mh-auto">
             <img alt="headshot of David Copeland" src="images/DavidCopeland.jpg" class="f-l w-5 mt-1 mr-3 mb-3 br-2 shadow-1">
-            David Bryant Copeland (“Dave” in real life and <a class="link underline blue-darker blue-lightest-dm" href="https://ruby.social/@davetron5000"><code>@davetron5000</code></a> on social media) is a seasoned technical leader with deep experience designing and maintaining distributed systems for Stitch Fix, LivingSocial, OPower, and Mood Health.  He’s been a CTO, a Chief Software Architect, a Coder, and Manager.
+            David Bryant Copeland (“Dave” in real life and <a class="link underline blue-darker blue-lightest-dm" href="https://ruby.social/@davetron5000"><code>@davetron5000</code></a> on social media) is a seasoned technical leader with deep experience designing and maintaining distributed systems for Stitch Fix, LivingSocial, OPower, and Mood Health.  He’s been a CTO, a Chief Software Architect, a coder, and manager.
           </p>
           <p class="p mh-auto">
             He’s the author of <a class="blue-darker blue-lightest-dm"  href="https://sustainable-rails.com">“Sustainable Web Development with Ruby on Rails”</a>, <a class="blue-darker blue-lightest-dm"  href="https://pragprog.com/book/rails6">“Agile Web Development with Rails 6”</a>, <a class="blue-darker blue-lightest-dm"  href="http://www.theseniorsoftwareengineer.com">“The Senior Software Engineer”</a>, <a class="blue-darker blue-lightest-dm"  href="https://solid-is-not-solid">S.O.L.I.D is not Solid</a>, and <a class="blue-darker blue-lightest-dm"  href="http://pragprog.com/book/dccar2">“Build Awesome Command-Line Applications in Ruby 2”</a>.
@@ -152,7 +151,7 @@
             <li class="p mb-3 mh-auto">
               <a class="blue-light-dm blue-darkest" href="https://github.com/sidekiq/sidekiq/wiki">Sidekiq Wiki</a> - a wealth of reference information.
             </li>
-            <li class="p mb3 mh-auto">
+            <li class="p mb-3 mh-auto">
               <a class="blue-light-dm blue-darkest" href="https://github.com/davetron5000/fake-api-server">Fake API Server</a> - used by the book to simulate common failures seen in production.
             </li>
             <li class="p mb-3 mh-auto">
@@ -177,7 +176,7 @@
         <div class="w-60-ns mh-auto">
           <h5 class="f-2 ttu tc tracked mh-auto measure">Colophon</h5>
           <p class="f-1 p mh-auto">
-            This website was built by hand in HTML and uses both <a href="https://tachyons.io" class="blue-dark blue-light-dm fv-sc tracked">MelangeCSS</a>, with customized purple and blue tints.  Text is set in Superclarendon, with fallbacks to Bookman Old Style, URW Bookman, Georgia Pro, Georgia, or the system's serif font.  This font stack was provided by <a href="https://modernfontstacks.com" class="blue-dark blue-light-dm">Modern Font Stacks</a>. Code is set in Courier, with a fallback to the system monospace font. This website is hosted on AWS using S3 and Cloudfront.
+            This website was built by hand using HTML and <a href="https://melangecss.com" class="blue-dark blue-light-dm fv-sc tracked">MelangeCSS</a> (with customized purple and blue tints).  Text is set in Superclarendon, with fallbacks to Bookman Old Style, URW Bookman, Georgia Pro, Georgia, or the system's serif font.  This font stack was provided by <a href="https://modernfontstacks.com" class="blue-dark blue-light-dm">Modern Font Stacks</a>. Code is set in Courier, with a fallback to the system monospace font. This website is hosted on AWS using S3 and Cloudfront.
           </p>
           <p class="f-1 p mh-auto">
             This website should respect your color scheme preferences and adjust to dark or light mode appropriately.
